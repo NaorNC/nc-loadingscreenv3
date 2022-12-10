@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCHub - LoadingScreen</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="cursor1 cursor1-dot"></div>
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+
+    <div class="main-wrapper">
+        <!-- <img src="./images/logo.png" class="logo"> -->
+        <div class="loading-bar">
+            <!-- <div class="front-bar"> </div>
+            <div class="pattern-bar"></div> -->
+
+            <img src="./images/loading-background.png" class="loading-background">
+        </div>
+        <div class="top-actions">
+            <img src="./images/sound-icon.png" class="sound-icon">
+            <button class="button-typ" id="sound-on">ON</button>
+            <button class="button-typ" id="sound-off">OFF</button>
+            <!--  -->
+            <img src="./images/cast-icon.png" class="cast-icon">
+            <button id="cast-on">ON</button>
+            <button id="cast-off">OFF</button>
+        </div>
+        <img src="./images/arrow-1.png" class="arrow-1">
+        <img src="./images/arrow-1.png" class="arrow-2">
+        <div class="sound-wrapper">
+            <input type="range" class="volume" max="1" min="0" step="0.01" onchange="changevolume(this.value)" />
+            <!-- <p class="music-name">When the Zyzz Music Kicks</p> -->
+            <img src="./images/sound-icon.png" class="sound-icon-2">
+            <img src="./images/sound-background.png" class="sound-background">
+            <audio id="music" preload="auto" loop>
+                <!-- <source src="./sounds/zyzz.mp3"></source> -->
+             </audio>
+        </div>
+        <div class="team-wrapper">
+
+        </div>
+        <div class="social-media">
+
+        </div>
+    </div>
+    <script src="./main.js "></script>
+    <script src="./config.js "></script>
+    <script src="js/scriptnav.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/config2.js"></script>
+</body>
+
+</html>
